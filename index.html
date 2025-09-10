@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tide Defenders | Salve Seu Mundo Oceânico</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <div class="nav-container container">
+        <a href="#" class="logo" onclick="showPage('home')">
+          <img src="./imagens/logo.png" alt="Logo Tide Defenders" />
+        </a>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#homePage">Início</a></li>
+            <li><a href="#characters">Personagens</a></li>
+            <li><a href="#gameplay">Jogabilidade</a></li>
+            <li><a href="#pressPage">Kit de Imprensa</a></li>
+            <li><a href="#contactPage">Contato</a></li>
+          </ul>
+          <button class="menu-btn" id="menuBtn">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Página Inicial -->
+    <div class="page-wrapper page-active" id="homePage">
+      <!-- Seção Hero -->
+      <section class="hero">
+        <div class="bubbles" id="bubbles"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title">
+            Salve Seu Mundo Oceânico dos <span>Ladrões Galácticos da Água</span>
+          </h1>
+          <p class="hero-subtitle">
+            Em um universo onde a água é um recurso disputado, quatro heróis
+            devem impedir uma organização interplanetária de roubar seus oceanos
+            e exterminar toda a vida marinha.
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção Personagens -->
+      <section class="characters" id="characters">
+        <div class="container">
+          <h2 class="section-title">Conheça os Heróis</h2>
+          <div class="characters-grid">
+            <!-- Personagem Orca -->
+            <div class="character-card">
+              <div class="character-image">
+                <img src="./imagens/orca.png" alt="Orca" />
+              </div>
+              <div class="character-content">
+                <h3 class="character-name">Orca</h3>
+                <span class="character-type">O Líder Golfinho</span>
+                <p class="character-desc">
+                  Determinado, leal e carismático. Tem um forte senso de justiça
+                  e sempre coloca o bem-estar dos outros acima de tudo.
+                </p>
+                <span class="character-ability"
+                  >Habilidade Especial: Mira de Precisão & Movimento
+                  Rápido</span
+                >
+              </div>
+            </div>
+
+            <!-- Personagem Mako -->
+            <div class="character-card">
+              <div class="character-image">
+                <img src="./imagens/mako.png" alt="Mako" />
+              </div>
+              <div class="character-content">
+                <h3 class="character-name">Mako</h3>
+                <span class="character-type">O Protetor Tubarão</span>
+                <p class="character-desc">
+                  Corajoso e experiente, com um lado protetor. Possui um humor
+                  sarcástico e grande respeito por seus companheiros.
+                </p>
+                <span class="character-ability"
+                  >Habilidade Especial: Combate de Linha de Frente & Proteção de
+                  Tanque</span
+                >
+              </div>
+            </div>
+
+            <!-- Personagem Shelly -->
+            <div class="character-card">
+              <div class="character-image">
+                <img src="./imagens/shelly.png" alt="Shelly" />
+              </div>
+              <div class="character-content">
+                <h3 class="character-name">Shelly</h3>
+                <span class="character-type">A Tartaruga Estrategista</span>
+                <p class="character-desc">
+                  Inteligente, calma e meticulosa. Prefere planejar antes de
+                  agir e adota uma abordagem mais tática ao combate.
+                </p>
+                <span class="character-ability"
+                  >Habilidade Especial: Defesa & Planejamento Estratégico</span
+                >
+              </div>
+            </div>
+
+            <!-- Personagem Volt -->
+            <div class="character-card">
+              <div class="character-image">
+                <img src="./imagens/volt.png" alt="Volt" />
+              </div>
+              <div class="character-content">
+                <h3 class="character-name">Volt</h3>
+                <span class="character-type">A Água-viva Veloz</span>
+                <p class="character-desc">
+                  Imprevisível, brincalhão e cheio de energia. Gosta de provocar
+                  inimigos e desafiar amigos em pequenas competições.
+                </p>
+                <span class="character-ability"
+                  >Habilidade Especial: Velocidade & Controle de Multidão</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Jogabilidade -->
+      <section class="gameplay" id="gameplay">
+        <div class="container gameplay-container">
+          <h2 class="section-title">Recursos Épicos de Jogabilidade</h2>
+
+          <!-- Recurso 1 -->
+          <div class="gameplay-feature">
+            <div class="gameplay-feature-image">
+              <img
+                src="./imagens/combate.png"
+                alt="Personagem em ação contra minions"
+              />
+            </div>
+            <div class="gameplay-feature-content">
+              <h3 class="gameplay-feature-title">Combate Atire e Corra</h3>
+              <p class="gameplay-feature-desc">
+                Experimente movimentos intensos combinados com ação de tiro
+                acelerada enquanto navega pelo território inimigo.
+              </p>
+              <ul class="gameplay-feature-list">
+                <li>Mecânicas de movimento dinâmico</li>
+                <li>Combate acelerado</li>
+                <li>Posicionamento tático</li>
+                <li>Perigos ambientais</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Recurso 2 -->
+          <div class="gameplay-feature">
+            <div class="gameplay-feature-image">
+              <img
+                src="./imagens/personalizar.png"
+                alt="Shelly segurando uma engrenagem"
+              />
+            </div>
+            <div class="gameplay-feature-content">
+              <h3 class="gameplay-feature-title">Arsenal Personalizável</h3>
+              <p class="gameplay-feature-desc">
+                Equipe seus heróis com uma variedade de armas e tipos de munição
+                especial para enfrentar diferentes inimigos e situações.
+              </p>
+              <ul class="gameplay-feature-list">
+                <li>Aprimore suas armas</li>
+                <li>Descubra tipos especiais de munição</li>
+                <li>Desbloqueie novas habilidades</li>
+                <li>Combine diferentes equipamentos</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Recurso 3 -->
+          <div class="gameplay-feature">
+            <div class="gameplay-feature-image">
+              <img src="./imagens/coop.png" alt="Orca, Mako e um boss" />
+            </div>
+            <div class="gameplay-feature-content">
+              <h3 class="gameplay-feature-title">Multijogador Cooperativo</h3>
+              <p class="gameplay-feature-desc">
+                Junte-se a amigos em um modo cooperativo opcional para até
+                quatro jogadores, com ataques combinados poderosos.
+              </p>
+              <ul class="gameplay-feature-list">
+                <li>Jogabilidade com entrada/saída dinâmica</li>
+                <li>Habilidades de personagens em sinergia</li>
+                <li>Coordenação de ataques em equipe</li>
+                <li>Quebra-cabeças multiplayer</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Recurso 4 -->
+          <div class="gameplay-feature">
+            <div class="gameplay-feature-image">
+              <img src="./imagens/chefao.png" alt="Dr secreto" />
+            </div>
+            <div class="gameplay-feature-content">
+              <h3 class="gameplay-feature-title">Batalha Épica no Espaço</h3>
+              <p class="gameplay-feature-desc">
+                Enfrente desafios únicos no confronto final dentro da nave
+                inimiga, com mecânicas de combate em gravidade zero.
+              </p>
+              <ul class="gameplay-feature-list">
+                <li>Navegação em gravidade zero</li>
+                <li>Armas espaciais exclusivas</li>
+                <li>Batalhas intensas contra chefes</li>
+                <li>Conclusão dramática</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Página Kit de Imprensa -->
+    <div id="pressPage">
+      <section class="press-release">
+        <div class="container press-release-container">
+          <div class="press-content">
+            <h1 class="press-title">
+              TIDE DEFENDERS: Um Novo Jogo de Ação e Aventura
+            </h1>
+            <span class="press-date">PARA DIVULGAÇÃO IMEDIATA</span>
+
+            <iframe
+              class="press-video"
+              src="https://www.youtube.com/embed/VgZEGuFXKc8"
+              title="Tide Defenders - Pitch"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <h2 class="press-subtitle">
+              Heróis do Oceano Contra os Ladrões Interplanetários da Água
+            </h2>
+            <p class="press-paragraph">
+              Em um novo jogo eletrizante de ação e aventura,
+              <strong>Tide Defenders</strong> coloca os jogadores no controle de
+              quatro heróis marinhos únicos lutando para salvar seu planeta da
+              misteriosa organização conhecida como ST – ladrões
+              interplanetários de água que drenam oceanos inteiros por lucro.
+            </p>
+
+            <p class="press-paragraph">
+              Tide Defenders combina combate acelerado estilo "atire e corra"
+              com habilidades específicas de personagens, multijogador
+              cooperativo e uma narrativa envolvente em um universo onde a água
+              se tornou o recurso mais valioso. Os jogadores irão explorar bases
+              submarinas, infiltrar naves inimigas e lutar em gravidade zero
+              nesta aventura emocionante.
+            </p>
+
+            <blockquote class="press-quote">
+              "Tide Defenders explora temas de conservação ambiental através de
+              uma lente sci-fi empolgante. Queríamos criar heróis que
+              representassem a diversidade da vida marinha enquanto entregamos
+              uma experiência de jogo divertida e significativa." — Diretor do
+              Jogo
+            </blockquote>
+
+            <h2 class="press-subtitle">Recursos Principais</h2>
+            <p class="press-paragraph">
+              • <strong>Quatro Personagens Jogáveis Únicos:</strong> Orca o
+              líder golfinho, Mako o protetor tubarão, Shelly a tartaruga
+              estrategista e Volt a água-viva veloz – cada um com habilidades e
+              estilos de jogo distintos.<br /><br />
+              • <strong>Sistema de Combate Dinâmico:</strong> Jogabilidade
+              acelerada com armas personalizáveis e tipos especiais de
+              munição.<br /><br />
+              • <strong>Multijogador Cooperativo:</strong> Modo co-op opcional
+              para até 4 jogadores, com ataques em equipe e habilidades em
+              sinergia.<br /><br />
+              • <strong>Batalhas Épicas Contra Chefes:</strong> Enfrente
+              inimigos únicos incluindo Aspirant Bite, General Trawler,
+              Commander Brine e Dama Vortex.<br /><br />
+              • <strong>Combate Espacial em Gravidade Zero:</strong> Desafios
+              únicos no confronto final a bordo da nave inimiga.
+            </p>
+
+            <h2 class="press-subtitle">Sobre o Jogo</h2>
+            <p class="press-paragraph">
+              Tide Defenders se inspira em clássicos como Cuphead, mas adiciona
+              seu próprio toque temático marinho. O jogo apresenta uma narrativa
+              envolvente, onde os jogadores descobrem o verdadeiro significado
+              por trás da misteriosa organização ST enquanto exploram ambientes
+              diversos, de bases submarinas a estações espaciais.
+            </p>
+
+            <p class="press-paragraph">
+              O jogo está sendo desenvolvido para PC e consoles com lançamento
+              previsto para 2024.
+            </p>
+
+            <div class="press-download-section">
+              <h3 class="press-download-title">Downloads do Kit de Imprensa</h3>
+              <div class="press-buttons">
+                <a href="#" class="press-kit-btn">
+                  <span>Pacote de Logos</span>
+                </a>
+                <a href="#" class="press-kit-btn">
+                  <span>Arte dos Personagens</span>
+                </a>
+                <a href="#" class="press-kit-btn">
+                  <span>Capturas de Tela</span>
+                </a>
+                <a href="#" class="press-kit-btn">
+                  <span>Ficha Técnica</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Página Contato -->
+    <div id="contactPage">
+      <section class="contact">
+        <div class="container contact-container">
+          <div class="contact-info">
+            <h1 class="contact-title">Entre em Contato</h1>
+            <p class="contact-subtitle">
+              Interessado em Tide Defenders? Tem dúvidas sobre o jogo? Preencha
+              o formulário e retornaremos o mais rápido possível.
+            </p>
+
+            <ul class="contact-details">
+              <li><i>✉️</i><span>info@tidedefenders.com</span></li>
+              <li><i>📱</i><span>+1 (555) 123-4567</span></li>
+              <li><i>📍</i><span>Sede do Estúdio, Ocean City</span></li>
+            </ul>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contactForm" onsubmit="return submitForm(event)">
+              <div class="form-group">
+                <label for="name" class="form-label">Seu Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-input"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Endereço de Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Digite seu email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Assunto</label>
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-input"
+                  placeholder="Sobre o que é?"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea
+                  id="message"
+                  class="form-textarea"
+                  placeholder="Sua mensagem aqui..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Interessado em:</label>
+                <div style="display: flex; gap: 20px">
+                  <label
+                    ><input type="checkbox" name="interest" value="media" />
+                    Cobertura na Mídia</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="interest"
+                      value="partnership"
+                    />
+                    Parceria</label
+                  >
+                  <label
+                    ><input type="checkbox" name="interest" value="beta" />
+                    Teste Beta</label
+                  >
+                </div>
+              </div>
+
+              <button type="submit" class="form-submit">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-col">
+          <a href="#" class="logo-footer" onclick="showPage('home')">
+            <img src="./imagens/logo.png" alt="Logo Tide Defenders" />
+          </a>
+          <p class="footer-about">
+            Um jogo de ação e aventura emocionante onde quatro heróis lutam para
+            salvar seu mundo oceânico dos ladrões interplanetários da água.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">t</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">ig</a>
+            <a href="#" class="social-icon">yt</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Navegação</h3>
+          <ul class="footer-links">
+            <li><a href="#" onclick="showPage('home')">Início</a></li>
+            <li><a href="#characters">Personagens</a></li>
+            <li><a href="#gameplay">Jogabilidade</a></li>
+            <li><a href="#" onclick="showPage('press')">Kit de Imprensa</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Serviço</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">EULA</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Newsletter</h3>
+          <p style="margin-bottom: 15px; opacity: 0.8; font-size: 0.9rem">
+            Inscreva-se para receber as últimas notícias e atualizações sobre
+            Tide Defenders.
+          </p>
+          <div class="footer-subscribe">
+            <input type="email" placeholder="Seu endereço de email" />
+            <button>Inscrever-se</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; 2023 Tide Defenders. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script>
+      function createBubbles() {
+        const bubbles = document.getElementById("bubbles");
+        const bubbleCount = 15;
+
+        for (let i = 0; i < bubbleCount; i++) {
+          const size = Math.random() * 60 + 20;
+          const bubble = document.createElement("div");
+          bubble.className = "bubble";
+          bubble.style.width = `${size}px`;
+          bubble.style.height = `${size}px`;
+          bubble.style.left = `${Math.random() * 100}%`;
+          bubble.style.animationDuration = `${Math.random() * 8 + 4}s`;
+          bubble.style.animationDelay = `${Math.random() * 5}s`;
+          bubbles.appendChild(bubble);
+        }
+      }
+
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        createBubbles();
+
+        const menuBtn = document.getElementById("menuBtn");
+        menuBtn.addEventListener("click", toggleMenu);
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (
+              !document
+                .getElementById("homePage")
+                .classList.contains("page-active")
+            ) {
+              showPage("home");
+              setTimeout(() => {
+                const target = document.querySelector(
+                  this.getAttribute("href")
+                );
+                if (target) {
+                  target.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }
+              }, 100);
+            } else {
+              const target = document.querySelector(this.getAttribute("href"));
+              if (target) {
+                target.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
